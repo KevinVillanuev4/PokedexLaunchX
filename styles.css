@@ -1,0 +1,61 @@
+html, body {
+    background-image: url(./fondo2.jpg);
+    background-size: 30%;
+    height: 100%;
+    margin: 0;
+    margin-top: .2em;
+    margin-bottom: 20px !important;
+  }
+
+  .input{
+    font-size: 0.8vw;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    white-space: nowrap;
+  }
+
+  @media (min-width: 768px) {
+    .col-md-rounded-start {
+      border-bottom-right-radius: 0 !important;
+      border-top-right-radius: 0 !important;
+    }
+    .col-md-rounded-medium {
+      border-radius: 0rem !important;
+      border-radius: 0rem !important;
+    }
+    .col-md-rounded-end {
+      border-bottom-left-radius: 0 !important;
+      border-top-left-radius: 0 !important;
+    }
+    .pokedexFrontal {
+      content: url(./Pokedex.png);
+    }
+    .pokedexTrasera {
+      display: none;
+    }
+    #imgContainer{
+      width: 17% !important; 
+      height: 23% !important;
+      top:47.5% !important;
+      left:23.75% !important;
+      border-radius: 7% !important;
+    }
+    #types{
+      width: 21% !important; 
+      height: 14.1% !important;
+      top:47.5% !important;
+      left:65% !important;
+      border-radius: 1vw !important;
+    }
+    #stats{
+      width: 21% !important; 
+      height: 14.1% !important;
+      top:64% !important;
+      left:65% !important;
+      border-radius: 1vw !important;
+    }
+  }

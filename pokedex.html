@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row align-items-stretch align-items-center justify-content-center no-gutters" style="height: 2vw;">
+            <label for="pokemon" 
+            class="col-3 col-md-3 bg-dark text-white fw-bold rounded col-md-rounded-start border border-light text-center">Pokename:</label>
+            <input type="text" name="pokemon" id="pokemon" placeholder="Type name or number of the Pokemon"
+            class="col-5 col-md-5 rounded col-md-rounded-medium border border-dark text-center">
+            <button name="buscarBtn" id="buscarBtn" 
+            class="col-8 col-md-3 btn-danger fw-bold rounded col-md-rounded-end border border-light">Buscar</button>  
+        </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center mt-5">
+        <div class="container">
+            <div class="column justify-content-center">
+                <div>
+                    <img src="./PokedexFrontal.png" class="pokedexFrontal" alt="Pokedex" style="width: 100%; ">
+                    <div id="imgContainer" class="border border-5 bg-white rounded d-flex flex-column align-items-center justify-content-center"
+                    style="border-color: black !important;  width: 47.2%; height: 34vw; position:absolute; top:31%; left:23%;">
+                        <img src="" alt="PokemonImage" id="pokeImage" style="margin-block: -5%; width: 75%; height: 80%; display: none   ;">
+                        <div id="pokeName"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./PokedexTrasera.png" class="pokedexTrasera" alt="Pokedex" style="width: 100%; ">
+                    <div id="types" class="border border-5 bg-dark d-flex justify-content-around align-items-center text-center text-white" 
+                    style="border-radius: 2%; border-color: black !important; font-size: 2rem;
+                    width: 58%; height: 10%; 
+                    position: absolute; top:89.5%; left:45%; transform: translate(-50%, -50%);">
+                    </div>
+                    <div id="stats" class="border border-dark border-5 bg-dark d-flex justify-content-around align-items-center text-center text-white" 
+                    style="border-radius: 2%; border-color: black !important;
+                    width: 58%; height: 10%; 
+                    position: absolute; top:100.5%; left:45%; transform: translate(-50%, -50%);">
+                    </div>
+                </div>
+                <div id="moveSetContainer" class="container text-center mt-3 rounded bg-light border border-5" style="border-color: black !important;">
+                    <h4 class="fw-bold mt-2">Move Set</h4>
+                    <ul id="moveSet" class="row row-cols-2 list-group list-group-horizontal">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-end fw-bold me-3" style="height: 2vw; ">All Rights Reserved &#174;.
+    </footer>
+
+    <script src="./pokedex.js"></script>
+</body>
+</html>
